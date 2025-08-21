@@ -1,80 +1,73 @@
-📘 Matrix and Number Operations in C++
-🎯 Aim
+# 🧮 Matrix Operations in C++
 
-To implement various arithmetic and matrix operations using C++. The programs demonstrate basic concepts such as addition of two numbers, diagonal sum of a matrix, matrix multiplication, matrix transpose, and row comparison in matrices.
+## 🎯 Aim
 
-📚 Theory
+To implement basic matrix operations in C++ including addition, multiplication, transpose, diagonal addition, and row comparison using arrays and loops.
 
-Matrices and numbers are foundational elements in programming and mathematics:
+---
 
-A number is a single data element used for arithmetic operations.
+## 📚 Theory
 
-A matrix is a 2D array of numbers arranged in rows and columns.
+A **matrix** is a 2D array of numbers arranged in rows and columns.  
+Matrix operations are widely used in mathematics, computer graphics, machine learning, and scientific computations.  
 
-Operations on matrices include addition, multiplication, transpose, and element-wise comparison.
+Key concepts:
+- **Addition**: Performed by adding corresponding elements of two matrices of the same dimension.
+- **Multiplication**: Rows of the first matrix multiplied with columns of the second matrix.
+- **Transpose**: Flipping a matrix over its diagonal, switching rows with columns.
+- **Diagonal operations**: Focused only on elements lying on the main diagonal.
+- **Row comparison**: Comparing elements of specific rows for equality or magnitude.
 
-These programs reinforce the use of loops, conditionals, arrays, and user input/output in C++.
+---
 
-🧮 Algorithms / Steps
+## 🧮 Algorithms / Steps
 
-Add Two Numbers (Add_2no.cpp)
+### 1. **Addition of Two Matrices (`Add_2no.cpp`)**
+- Input dimensions and elements of both matrices.
+- Loop through rows and columns.
+- Add corresponding elements: `C[i][j] = A[i][j] + B[i][j]`.
+- Print result.
 
-Input two numbers
+### 2. **Diagonal Addition (`Diagonal_Addition.cpp`)**
+- Input a square matrix.
+- Traverse where `i == j`.
+- Sum diagonal elements.
+- Print sum.
 
-Calculate their sum
+### 3. **Matrix Multiplication (`Multiplication.cpp`)**
+- Input dimensions and elements of matrices A (m×n) and B (n×p).
+- Initialize result matrix C (m×p) with zeros.
+- Use triple nested loops:
+  - `C[i][j] += A[i][k] * B[k][j]`.
+- Print result.
 
-Output the result
+### 4. **Matrix Transpose (`Transpose.cpp`)**
+- Input matrix A (m×n).
+- For each element `A[i][j]`, assign to `B[j][i]`.
+- Print transpose matrix B.
 
-Diagonal Addition (Diagonal_Addition.cpp)
+### 5. **First & Second Row Comparison (`first_sec_row_comp.cpp`)**
+- Input matrix.
+- Extract elements of row1 and row2.
+- Compare element-wise:
+  - Print whether equal, greater, or smaller.
+- Conclude relationship.
 
-Input size n and n x n matrix elements
+---
 
-Initialize sum = 0
+## ✅ Conclusion
 
-Loop through matrix elements and add those where row index = column index
+This set of programs demonstrates how arrays and nested loops can be used to perform fundamental matrix operations. These operations form the base for advanced computations in engineering, graphics, and data science.
 
-Output the sum of diagonal elements
+---
 
-Matrix Multiplication (Multiplication.cpp)
+## 🧵 Topics Covered
 
-Input dimensions and elements of matrices A and B
+- 2D Array declaration and initialization  
+- Matrix traversal using nested loops  
+- Matrix addition, multiplication, transpose  
+- Diagonal operations  
+- Row-wise comparison  
+- Input/Output formatting of matrices  
 
-Check if multiplication is valid (cols of A == rows of B)
 
-Multiply using nested loops and store in result matrix
-
-Display the result matrix
-
-Transpose of Matrix (Transpose.cpp)
-
-Input matrix dimensions and elements
-
-Create a new matrix by swapping rows and columns
-
-Assign transpose[i][j] = original[j][i]
-
-Output the transposed matrix
-
-Compare First and Second Rows (first_sec_row_comp.cpp)
-
-Input matrix dimensions and elements
-
-Compare corresponding elements of the first and second rows
-
-Display the comparison results
-
-✅ Conclusion
-
-This set of programs provides practical experience with fundamental arithmetic and matrix operations in C++. These exercises build core skills in handling arrays, loops, and conditional logic, forming a base for more complex data processing and algorithmic problem solving.
-
-🧵 Topics Covered
-
-Arithmetic operations with numbers
-
-Matrix operations: diagonal addition, multiplication, transpose
-
-Row-wise comparison of matrices
-
-Use of nested loops and conditional statements
-
-Input/output handling in C++
