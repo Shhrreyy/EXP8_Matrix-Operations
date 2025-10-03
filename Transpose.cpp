@@ -3,12 +3,12 @@ using namespace std;
 
 int main() {
     int r, c;
-    cout << "Enter number of rows and columns of matrix: (put space between numbers)\n";
+    cout << "Enter number of rows and columns of matrix:\n";
     cin >> r >> c;
 
     int a[10][10], t[10][10];
 
-    cout << "Enter elements of matrix: (put space between numbers)\n";
+    cout << "Enter elements of matrix:\n";
     for (int i = 0; i < r; i++) {
         for (int j = 0; j < c; j++) {
             cin >> a[i][j];
